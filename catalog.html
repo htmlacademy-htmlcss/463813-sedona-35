@@ -1,64 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header class="page-header">
-        <nav class="navigation">
-            <a class="navigation-link" href="#">
-                <img src="#" alt="логотип седоны" class="navigation-logo">
-            </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="/index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">О седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a href="" class="navigation-link">Гостиницы</a>
-            </li>
+      <nav class="navigation">
+        <a class="navigation-link" href="#">
+          <img src="#" alt="логотип седоны" class="navigation-logo">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="/index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="" class="navigation-link">Гостиницы</a>
+          </li>
 
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
       </header>
-      <main class="main-catalog">
+      <section class="catalog-hotels">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Бассейн" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Парковка" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="Бассейн" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="Парковка">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="Wi-Fi">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
 
-      </main>
-      <footer class="footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item"><a href="">
+
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item"><a href="">
               <span class="visually-hidden">Вконтакте</span>
             </a></li>
-            <li class="footer-social-item"><a href="">
+          <li class="footer-social-item"><a href="">
               <span class="visually-hidden">Телеграмм</span>
             </a></li>
-            <li class="footer-social-item"><a href="">
+          <li class="footer-social-item"><a href="">
               <span class="visually-hidden">Ютуб</span>
             </a></li>
-          </ul>
-        </section>
-        <a class="footer-contact" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-logo" href="#">
-          <img class="logoAcademy" src="" alt="логотип Академии">
-        </a>
-      </footer>
-</body>
+        </ul>
+      </section>
+      <a class="footer-contact" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo" href="#">
+        <img class="logoAcademy" src="" alt="логотип Академии">
+      </a>
+    </footer>
+  </body>
+
 </html>
