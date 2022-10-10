@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+    font-display: swap;
+  }
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2 ;
+  color: #000000;
+}
+.page-header{
+  background-color:#ffffff;
+}
+.navigation-link{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+.navigation-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.hero{
+  color:#000000;
+  background-color: #fff;
+  background-image: url(../images/zigzag.svg),url(../images/sedona.jpg);
+  background-repeat:no-repeat;
+  background-size: 100% auto;
+}
+.pressents{
+  text-align: center;
+}
+.pressents-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.pressents-description{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+.list-item{
+  text-align: center;
+}
+.advanteges-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advanteges-description{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.search-room{
+  text-align: center;
+  background-color:#ffffff;
+  color: #000000;
+}
+.search-room-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.search-room-subtitle{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+.search-room-link{
+  padding:8px 50px;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color:#ffffff;
+  text-transform: uppercase;
+}
+.subscribe{
+  color: #ffffff;
+  background-color: rgb(13, 48, 241);
+  background-image:url(../images/background-subscribe.jpg);
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.subscribe-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-description{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+.subscribe-button{
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color:#ffffff;
+  background-color: #82B3D3;
+  border: none;
+}
