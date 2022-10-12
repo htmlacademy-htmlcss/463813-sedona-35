@@ -42,7 +42,7 @@ body {
 }
 .hero{
   color:#000000;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url(../images/zigzag.svg),url(../images/sedona.jpg);
   background-repeat:no-repeat;
   background-size: 100% auto;
@@ -57,7 +57,6 @@ body {
   text-transform: uppercase;
 }
 .pressents-description{
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color:#333333;
@@ -113,7 +112,7 @@ body {
 }
 .subscribe{
   color: #ffffff;
-  background-color: rgb(13, 48, 241);
+  background-color: #093ff1;
   background-image:url(../images/background-subscribe.jpg);
   background-size:100% auto;
   background-repeat: no-repeat;
@@ -261,5 +260,4 @@ body {
   color:#333333;
   font-size: 22px;
   line-height: 26px;
-
 }
