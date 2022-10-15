@@ -28,6 +28,7 @@ body {
   background-color: #F2F2F2 ;
   color: #000000;
 }
+/* Навигация */
 .navigation{
   display: flex;
   width: 1200px;
@@ -97,6 +98,7 @@ body {
   line-height: 26px;
   color:#333333;
 }
+/* Блок преимуществ */
 .advanteges-list{
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +108,6 @@ body {
 }
 .list-item{
   width: 400px;
-  align-self: center;
 }
 .advanteges-title{
   font-weight: 700;
@@ -184,6 +185,7 @@ body {
   border: none;
   text-transform: uppercase;
 }
+/* Футер */
 .footer{
   background-color:#ffffff;
   width: 1200px;
