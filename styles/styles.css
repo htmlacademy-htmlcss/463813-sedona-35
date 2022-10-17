@@ -20,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -28,15 +27,22 @@ body {
   background-color: #F2F2F2 ;
   color: #000000;
 }
+.visually-hidden{
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 /* Навигация */
 .navigation{
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
-  background-color: #ffffff;
 }
 .navigation-logo{
-  margin-left: 70px ;
   margin-right: 45px;
 }
 .navigation-list{
@@ -74,9 +80,11 @@ body {
   background-color: #ffffff;
 }
 .hero{
+  height: 485px;
   color:#000000;
-  background-color: #ffffff;
+  background-color: #6d6d6d;
   background-image: url(../images/zigzag.svg),url(../images/sedona.jpg);
+  background-position: bottom;
   background-repeat:no-repeat;
   background-size: 100% auto;
 }
@@ -85,15 +93,28 @@ body {
   margin: 0 auto;
 }
 .pressents{
+  display: flex;
+  min-height: 280px;
+
+}
+.block{
+  margin: 0 auto;
+  align-self:center;
   text-align: center;
 }
 .pressents-title{
+  margin: 0 auto ;
+  padding: 0;
+  width: 620px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .pressents-description{
+  margin: 0 auto;
+  padding: 0;
+  width: 651px;
   font-size: 22px;
   line-height: 26px;
   color:#333333;
@@ -102,17 +123,16 @@ body {
 .advanteges-list{
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
 
 }
 .list-item{
+  min-width: 400px;
+  min-height: 385px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 400px;
-  height: 385px;
+  align-items:center;
 }
 
 .advanteges-title{
@@ -138,21 +158,33 @@ body {
   color:#ffffff;
   background-color: #82B3D3;
 }
+.advanteges-white-text{
+  min-width: 400px;
+}
 .advanteges-title-white p{
   color: #ffffff;
 }
+.advanteges-img{
+  display: block;
+}
 .search-room{
+  min-height: 400px;
+  display: flex;
   text-align: center;
   background-color:#ffffff;
   color: #000000;
 }
+
 .search-room-title{
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .search-room-subtitle{
+  width: 600px;
+  margin:0 auto;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -168,7 +200,10 @@ body {
   color:#ffffff;
   text-transform: uppercase;
 }
+/* Блок подписки */
 .subscribe{
+  display: flex;
+  min-height: 400px;
   color: #ffffff;
   background-color: #093ff1;
   background-image:url(../images/background-subscribe.jpg);
@@ -216,6 +251,7 @@ body {
   line-height: 40px;
   color:#000000;
 }
+/* Страница с отелями */
 .inner-header{
   background-color: #e67103;
   background-image: url(../images/background-filters.jpg);
@@ -242,11 +278,16 @@ body {
 .form-filters{
   display: flex;
   justify-content: space-around;
+  align-items:center;
 }
 .filters-title{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+.form-button-group{
+  display: flex;
+  flex-direction: column;
 }
 .control{
   font-weight: 400;
@@ -271,9 +312,11 @@ body {
 }
 .select{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .result-search{
+  width: 1060px;
+  margin: 0 auto;
   color:#000000;
   background-color: #ffffff;
 }
@@ -292,18 +335,15 @@ body {
   line-height: 21px;
   color: #333333;
 }
-.hotels-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 .hotels-list{
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .hotels-card{
   width: 340px;
-  margin-right: 20px;
   text-align: center;
   border: 1px solid #F2F2F2;
 }
@@ -340,7 +380,7 @@ body {
 .like-button{
   background-color:#82B3D3;
 }
-.pagination-wrapper{
+.pagination{
   display: flex;
 }
 .pagination-link{
@@ -355,6 +395,7 @@ body {
   color:#000000;
 }
 .subscribe-inner p{
+  width: 475px;
   color:#333333;
   font-size: 22px;
   line-height: 26px;
