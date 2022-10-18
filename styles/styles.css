@@ -49,10 +49,18 @@ body {
   width: 350px;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items:center;
+  list-style-type: none;
 }
 .navigation-user{
-  max-width: 250px;
+  min-width: 250px;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
+  display: flex;
+  align-items:center;
+  list-style-type: none;
 }
 .navigation-link{
   font-weight: 700;
@@ -125,20 +133,21 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
+  list-style-type: none;
 
 }
 .list-item{
   min-width: 400px;
   min-height: 385px;
-  display: flex;
-  align-items:center;
+  background-color: rgba(131, 179, 211, 0.12);
 }
-
 .advanteges-title{
   margin: 0 auto;
   padding: 0;
-  width: 175px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 112px;
+  padding-right: 112px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -148,25 +157,31 @@ body {
 .advanteges-description{
   margin: 0 auto;
   padding: 0;
-  width: 230px;
+  padding-left: 85px;
+  padding-right: 85px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color:#333333;
 }
 .advanteges-white{
+  display: flex;
+}
+.advanteges-white-text{
   color:#ffffff;
   background-color: #82B3D3;
 }
-.advanteges-white-text{
-  min-width: 400px;
-}
-.advanteges-title-white p{
+.advanteges-white-text p{
   color: #ffffff;
+}
+.list-text{
+  max-width: 400px;
+  text-align: center;
 }
 .advanteges-img{
   display: block;
 }
+/* Блок поиска */
 .search-room{
   min-height: 400px;
   display: flex;
@@ -341,6 +356,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type:none ;
 }
 .hotels-card{
   width: 340px;
