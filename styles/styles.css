@@ -43,26 +43,34 @@ body {
   margin: 0 auto;
 }
 .navigation-logo{
-  margin-right: 45px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
 }
 .navigation-list{
-  width: 350px;
+  width: 450px;
   margin: 0;
   padding: 0;
+  padding-left: 185px;
   display: flex;
+  flex-wrap: wrap;
   align-items:center;
   list-style-type: none;
 }
 .navigation-user{
-  min-width: 250px;
   margin: 0;
   padding: 0;
+  min-width: 250px;
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items:center;
   list-style-type: none;
 }
 .navigation-link{
+  padding: 20px 0;
+  padding-right: 32px;
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -70,8 +78,11 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.navigation-icon{
+  width: 18px;
+}
 .navigation-button{
-  padding: 8px 50px;
+  padding: 8px 34px;
   background-color: #756157;
   color:#ffffff;
   font-weight: 700;
@@ -96,23 +107,20 @@ body {
   background-repeat:no-repeat;
   background-size: 100% auto;
 }
-.logo{
+.hero-logo{
   display: block;
   margin: 0 auto;
+  padding-top: 50px;
 }
 .pressents{
   display: flex;
-  min-height: 280px;
-
 }
 .block{
   margin: 0 auto;
-  align-self:center;
-  text-align: center;
 }
 .pressents-title{
   margin: 0 auto ;
-  padding: 0;
+  padding: 70px 0 25px;
   width: 620px;
   font-weight: 700;
   font-size: 30px;
@@ -121,7 +129,7 @@ body {
 }
 .pressents-description{
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 90px;
   width: 651px;
   font-size: 22px;
   line-height: 26px;
@@ -143,11 +151,7 @@ body {
 }
 .advanteges-title{
   margin: 0 auto;
-  padding: 0;
-  padding-top: 100px;
-  padding-bottom: 60px;
-  padding-left: 112px;
-  padding-right: 112px;
+  padding: 100px 114px 60px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -183,7 +187,6 @@ body {
 }
 /* Блок поиска */
 .search-room{
-  min-height: 400px;
   display: flex;
   text-align: center;
   background-color:#ffffff;
@@ -192,21 +195,24 @@ body {
 
 .search-room-title{
   margin: 0;
+  padding: 96px 0 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .search-room-subtitle{
-  width: 600px;
   margin:0 auto;
+  padding: 0 300px 55px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color:#333333;
 }
 .search-room-link{
+  margin-bottom: 95px;
   padding:8px 50px;
+  /* display: block; */
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
