@@ -228,6 +228,7 @@ body {
 /* Блок подписки */
 .subscribe{
   min-height: 415px;
+  display: flex;
   color: #ffffff;
   background-color: #093ff1;
   background-image:url(../images/background-subscribe.jpg);
@@ -250,8 +251,13 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
+.subscribe-form{
+  display: grid;
+  grid-template-columns: 452px 232px;
+}
 .subscribe-button{
   padding: 8px 50px;
+  justify-self: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -313,6 +319,7 @@ body {
 .breadcrumbs{
   margin-left: 70px;
   display: flex;
+  flex-wrap: wrap;
 }
 .breadcrumbs-link{
   font-weight: 400;
@@ -402,31 +409,58 @@ body {
 .hotels-card:nth-child(3){
   margin-right: 0;
 }
+.hotels-card-img{
+  margin-bottom: 15px;
+}
 .hotels-card-link{
   display: block;
+}
+.grid{
+  display: grid;
+  grid-column: 140px 140px;
+  gap: 15px;
+  grid-template-areas:
+  "title title"
+  "status price"
+  "button-more button-like"
+  "stars rating";
+  grid-auto-rows: auto;
 }
 .product-card-title{
   margin: 0;
   padding: 0;
+  grid-area: title;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
-.product-card-price{
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
 .status{
+  margin: 0;
+  grid-area: status;
+  justify-self: start;
+  color:#333333;
+}
+.price{
+  margin: 0;
+  grid-area: price;
+  justify-self: end;
   color:#333333;
 }
 .rating{
   margin: 0;
+  padding: 9px 20px;
+  grid-area: rating;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #333333;
+  background-color: #F2F2F2;
   text-transform: uppercase;
+}
+.stars{
+  grid-area: stars;
 }
 .hotels-card-button{
   padding: 8px 20px;
