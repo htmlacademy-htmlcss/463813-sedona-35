@@ -332,6 +332,9 @@ body {
   justify-content: space-between;
   align-items:center;
 }
+.filters-group{
+  border:none;
+}
 .filters-title{
   font-weight: 700;
   font-size: 20px;
@@ -340,6 +343,11 @@ body {
 .form-button-group{
   display: flex;
   flex-direction: column;
+}
+.filters-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .control{
   font-weight: 400;
@@ -365,6 +373,7 @@ body {
 .select{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .result-search{
   width: 1060px;
@@ -398,6 +407,7 @@ body {
   list-style-type:none ;
 }
 .hotels-card{
+  width: 305px;
   display: flex;
   flex-direction: column;
   margin-right: 20px;
@@ -430,7 +440,6 @@ body {
   margin: 0;
   padding: 0;
   grid-area: title;
-
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -451,7 +460,7 @@ body {
   margin: 0;
   padding: 9px 20px;
   grid-area: rating;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -471,6 +480,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   background-color:#756157;
 }
 .like-button{
