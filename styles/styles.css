@@ -27,6 +27,12 @@ body {
   background-color: #F2F2F2 ;
   color: #000000;
 }
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow:5px 0 5px rgba(0, 0, 0, 0.1),-5px 0 5px rgba(0, 0, 0, 0.1);
+}
 .visually-hidden{
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -79,10 +85,21 @@ body {
   color: #000000;
 }
 .navigation-icon{
-  width: 18px;
+  padding: 20px;
+  width: 20px;
+}
+.navigation-icon-search{
+  background: url(../images/header/search.svg) no-repeat;
+  background-position: 50% 50%;
+}
+.navigation-icon-favorites{
+  background: url(../images/header/favorites.svg) no-repeat;
+  background-position: 50% 50%;
 }
 .navigation-button{
   padding: 8px 34px;
+  margin-left: 19px;
+  border-radius: 4px;
   background-color: #756157;
   color:#ffffff;
   font-weight: 700;
@@ -92,11 +109,6 @@ body {
 }
 .main-container{
   flex-grow: 1;
-}
-.page-container{
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #ffffff;
 }
 .hero{
   height: 485px;
