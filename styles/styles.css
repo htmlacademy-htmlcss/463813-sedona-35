@@ -657,7 +657,7 @@ body {
 .stars{
   grid-area: stars;
   background:url(../images/star.svg);
-  background-repeat: no-repeat;
+  background-repeat: space;
   background-position:center;
 }
 .hotels-card-button{
