@@ -135,16 +135,17 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* Не разобрался с нажатием раскоментирую позже
-.navigation-button:active{
-  color: rgba(255, 255, 255, 0.3);
-} */
+.navigation-button:focus{
+  outline: none;
+  background-color: #615048;
+}
+.navigation-button:focus-visible{
+  background-color: #615048;
+}
 .navigation-button:hover{
   background-color: #615048;
 }
-.navigation-button:focus{
-  background-color: #615048;
-}
+
 .main-container{
   flex-grow: 1;
 }
@@ -341,6 +342,7 @@ body {
   background-color:#615048;
 }
 .search-room-link:focus{
+  outline: none;
   background-color:#615048;
 }
 .search-room-link:active{
@@ -382,6 +384,7 @@ body {
 .subscribe-button{
   padding: 8px 0;
   grid-column: 2/3;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -397,6 +400,7 @@ body {
   background-color: #68A2CA;
 }
 .subscribe-button:focus{
+  outline: none;
   background-color: #68A2CA;
 }
 .subscribe-button:active{
@@ -510,6 +514,7 @@ body {
 }
 
 .filtres-button{
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
