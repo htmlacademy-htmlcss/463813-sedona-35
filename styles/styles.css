@@ -654,11 +654,16 @@ body {
   background-color: #F2F2F2;
   text-transform: uppercase;
 }
+
 .stars{
   grid-area: stars;
-  background:url(../images/star.svg);
+  /* background:url(../images/star.svg);
   background-repeat: space;
-  background-position:center;
+  background-position:center; */
+}
+.stars img{
+  margin-right: 6px;
+  margin-top: 10px;
 }
 .hotels-card-button{
   padding: 8px 18px;
