@@ -79,7 +79,7 @@ body {
 .navigation-link:focus{
   outline: none;
 }
-.navigation-item:first-child .navigation-link:after{
+.navigation-link-current:after{
   position: absolute;
   bottom:0;
   left: 0;
@@ -391,6 +391,9 @@ body {
 .subscribe-form-email:focus{
   outline: none;
 }
+.subscribe-form-email-inner{
+  background-color: #F2F2F2;
+}
 .subscribe-button{
   padding: 8px 0;
   grid-column: 2/3;
@@ -482,10 +485,23 @@ body {
   color:rgba(117, 97, 87, 0.3);
 }
 .footer-logo{
+  width: 115px;
+  height: 35px;
   margin-right: 70px;
 }
-.footer-logo:hover .logoAcademy{
+.footer-logo svg{
+  fill:#000000;
+}
+.footer-logo:hover svg{
   fill:#756157;
+}
+.footer-logo:focus{
+  outline: none;
+}.footer-logo:focus svg{
+  fill:#756157;
+}
+.footer-logo:active svg{
+  fill:rgba(117, 97, 87, 0.3);
 }
 /* Страница с отелями */
 .inner-header{
@@ -680,7 +696,7 @@ body {
 .hotels-card:nth-child(3n+3){
   margin-right: 0;
 }
-.hotels-card-img{
+.hotels-card-link{
   grid-area: img;
 }
 .product-card-title{
@@ -718,9 +734,6 @@ body {
 
 .stars{
   grid-area: stars;
-  /* background:url(../images/star.svg);
-  background-repeat: space;
-  background-position:center; */
 }
 .stars img{
   margin-right: 6px;
