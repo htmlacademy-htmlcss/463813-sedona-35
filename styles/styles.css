@@ -76,8 +76,7 @@ body {
   color: #000000;
 }
 .navigation-link:focus-visible{
-  outline: none;
-  border:2px solid #82B3D3;
+  outline: 2px solid #82B3D3;
 }
 .navigation-link-current:after{
   position: absolute;
@@ -102,8 +101,7 @@ body {
   padding: 20px;
 }
 .navigation-icon:focus-visible{
-  outline: none;
-  border:2px solid #82B3D3;
+  outline: 2px solid #82B3D3;
 }
 .navigation-icon-search{
   background: url(../images/header/search.svg) no-repeat;
@@ -450,8 +448,7 @@ body {
   fill:#83B3D3;
 }
 .footer-link:focus{
-  outline: none;
-  border:2px solid #82B3D3;
+  outline: 2px solid #82B3D3;
 }
 .footer-link:hover .icon-footer{
   fill:#68A2CA;
@@ -553,19 +550,25 @@ body {
 .breadcrumbs-link:focus{
   outline: none;
 }
-/* Формы */
+/* Фильтры */
 .form-filters{
   margin: 0;
-  padding: 40px 70px 50px;
+  padding: 36px 73px 55px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items:start;
 }
 .filters-group{
   margin: 0;
+  margin-right: 70px;
   padding: 0;
   border:none;
 }
+.filters-group:nth-child(2){
+  margin-left: -5px;
+  margin-right: 150px;
+}
+
 .filters-title{
   margin-bottom: 32px;
   font-weight: 700;
@@ -612,8 +615,7 @@ body {
 }
 .toggle-min {
   top: -8px;
-  left: -2px;
-}
+  left: -2px;}
 
 .toggle-max {
   top: -8px;
@@ -636,6 +638,12 @@ body {
   margin-bottom: 48px;
   padding: 0;
 }
+.catalog-filter-label:focus-visible{
+  outline: 2px solid black;
+}
+.catalog-filter-label:active{
+  outline: 2px solid black;
+}
 .range-input {
   max-width: 50%;
   padding: 12px 0;
@@ -646,8 +654,14 @@ body {
   font-size: 18px;
   line-height: 24px;
   border: none;
-  appearance: textfield;
+  /* appearance: textfield; */
   background-color: transparent;
+}
+.range-input:focus{
+  outline: none;
+}
+.range-input:focus + .catalog-filter-label{
+  outline: 2px solid #83B3D3;
 }
 .catalog-filter-label:first-child{
   border-top-left-radius:4px;
@@ -672,11 +686,62 @@ body {
   padding-bottom: 16px;
 }
 .control{
+  position: relative;
+  display: block;
+  padding-left: 36px;
   font-weight: 400;
   line-height: 23px;
 }
+.control:hover{
+  opacity: 0.7;
+}
+.control:active{
+  opacity: 0.6;
+}
+.control-mark{
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius:4px;
+}
+.control-input[type="checkbox"]:focus-visible + .control-mark{
+  outline: 2px solid #68A2CA;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
+  background-image: url(../images/filters-icon/check.svg);
+  content: "";
+}
+.control-input[type="radio"] + .control-mark{
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+}
+.control-input[type="radio"]:focus-visible + .control-mark{
+  outline: 2px solid #68A2CA;
+}
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 13px;
+  height: 10px;
+  background-image: url(../images/filters-icon/radio.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
 
 .filtres-button{
+  margin-top: 55px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -687,6 +752,7 @@ body {
   padding: 8px 50px;
 }
 .button-apply{
+  margin-bottom: 15px;
   background-color: #82B3D3;
   color:#ffffff;
   border-radius: 4px;
