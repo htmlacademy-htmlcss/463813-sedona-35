@@ -188,25 +188,27 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label for="arrivalDate"> Дата заезда:</label>
-              <input class="field-date" type="text" name="arrivalDate" id="arrivalDate">
+              <label class="fildName" for="arrivalDate"> Дата Заезда:</label>
+              <input class="field-date" type="text" name="arrivalDate" id="arrivalDate" placeholder="27 апреля 2020">
             </P>
             <P class="field-group">
-              <label for="dateOfDeparture">Дата выезда:</label>
-              <input class="field-date" type="text" id="dateOfDeparture">
+              <label class="fildName" for="dateOfDeparture">Дата Выезда:</label>
+              <input class="field-date" type="text" id="dateOfDeparture" placeholder="1 сентября 2023">
             </P>
-            <div class="people">
+            <div class="field-form-people">
             <p class="field-group ">
-              <label for="adults">Взрослые:</label>
-              <button></button>
-              <input class="field-number" type="number" id="adults">
-              <button></button>
+              <label class="fildName" for="adults">Взрослые:</label>
+              <button class="button-modal less"></button>
+              <input class="field-number" type="number" id="adults" placeholder="2">
+              <button class="button-modal more"></button>
             </p>
-            <p class="field-group ">
-              <label for="adults">Дети:</label>
-              <button></button>
-              <input class="field-number" type="number" id="kids">
-              <button></button>
+            <p class="field-group">
+              <label class="fildName tooltip" for="adults">Дети:
+                
+              </label>
+              <button class="button-modal less"></button>
+              <input class="field-number" type="number" id="kids" placeholder="2">
+              <button class="button-modal more"></button>
             </p>
             </div>
             <a class="search-modal-button" href="#">Найти</a>
