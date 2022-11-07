@@ -179,6 +179,41 @@
         </a>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal ">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="arrivalDate"> Дата заезда:</label>
+              <input class="field-date" type="text" name="arrivalDate" id="arrivalDate">
+            </P>
+            <P class="field-group">
+              <label for="dateOfDeparture">Дата выезда:</label>
+              <input class="field-date" type="text" id="dateOfDeparture">
+            </P>
+            <div class="people">
+            <p class="field-group ">
+              <label for="adults">Взрослые:</label>
+              <button></button>
+              <input class="field-number" type="number" id="adults">
+              <button></button>
+            </p>
+            <p class="field-group ">
+              <label for="adults">Дети:</label>
+              <button></button>
+              <input class="field-number" type="number" id="kids">
+              <button></button>
+            </p>
+            </div>
+            <a class="search-modal-button" href="#">Найти</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
