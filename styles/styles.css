@@ -638,8 +638,8 @@ body {
   margin-bottom: 48px;
   padding: 0;
 }
-.catalog-filter-label:focus-visible{
-  outline: 2px solid black;
+.catalog-filter-label:focus-within{
+  outline: 2px solid #83B3D3;
 }
 .catalog-filter-label:active{
   outline: 2px solid black;
@@ -1004,7 +1004,7 @@ body {
   z-index: 2;
 }
 .modal-container-close{
-  display: none;
+  /* display: none; */
 }
 .modal {
   box-sizing:border-box;
@@ -1036,6 +1036,9 @@ body {
 .modal-close-button:focus-visible{
   outline: 2px solid #83B3D3;
 }
+.modal-close-button:active{
+  opacity: .7;
+}
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1055,10 +1058,13 @@ body {
   align-items: center;
   font-weight: 700;
 }
+.calendar{
+  position: relative;
+}
 .info{
   position: absolute;
-  left:160px;
-  top:45px;
+  left:157px;
+  top:50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1068,12 +1074,15 @@ body {
   color:#FF5757;
 }
 .field-number{
-  padding: 0;
+  padding: 14px 50px;
   background-color: #F2F2F2;
   border:none;
   width: 30px;
-  height: 100%;
   text-align: center;
+  border-radius:4px;
+}
+.field-number:focus{
+  outline: 2px solid #83B3D3;
 }
 .field-number::-webkit-outer-spin-button,
 .field-number::-webkit-inner-spin-button {
@@ -1086,36 +1095,55 @@ body {
 }
 .field-date{
   margin: 0;
-  padding: 13px 250px 12px 20px;
+  padding: 13px 212px 12px 20px;
   border:none;
   background-color: #F2F2F2;
   color:#000000;
   border-radius:4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.calendar::after{
+  position: absolute;
+  content:"";
+  width: 16px;
+  height: 15px;
+  top:5px;
+  right: -450px;
+  background-image: url(../images/calendar.svg);
+}
+.field-date:hover{
+  background-color: #E6E6E6;
 }
 .field-date:focus{
   outline: 2px solid #83B3D3;
 }
+
 .field-date::placeholder{
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
-.field-group-number{
-  display: grid;
-  grid-template-columns: 40px 30px 40px;
+  opacity: .6;
 }
 .button-modal{
+  display: flex;
+  position: absolute;
   margin: 0;
-  padding: 0;
-  width: 40px;
-  height: 48px;
+  padding: 5px;
   border:none;
-  background-color: #F2F2F2;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  align-items:center;
+  box-sizing:border-box;
 }
 .button-modal:focus{
   outline: 2px solid #83B3D3;
+  border-radius:4px;
 }
 .field{
   font-family: inherit;
@@ -1129,13 +1157,11 @@ body {
   margin-right: 46px;
 }
 .less{
-  border-top-left-radius:4px;
-  border-bottom-left-radius:4px;
-  padding-bottom: 7px;
+  right: 90px;
+  bottom: 9px;
 }
 .more{
-  border-top-right-radius:4px;
-  border-bottom-right-radius:4px;
+  right: 15px;
 }
 .more-svg{
   fill:#000000;
@@ -1159,7 +1185,7 @@ body {
 .search-modal-button{
   display: block;
   padding:18px;
-  max-width: 100%;
+  min-width: 100%;
   text-align: center;
   text-decoration: none;
   background-color: #83B3D3;
@@ -1169,6 +1195,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+  border:none;
 }
 .search-modal-button:hover{
   background-color: #68A2CA;
@@ -1194,7 +1221,7 @@ body {
   cursor: pointer;
 }
 .tooltip-text{
-  opacity: 0;
+  display: none;
   position: absolute;
   padding: 15px 18px 18px 22px;
   width: 256px;
@@ -1219,6 +1246,5 @@ body {
   background-color: #333333;
 }
 .tooltip-svg:hover +.tooltip-text{
-  opacity: 1;
-  transition: 0.5s;
+  display: block;
 }
