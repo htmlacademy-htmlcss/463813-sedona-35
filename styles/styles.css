@@ -1004,7 +1004,7 @@ body {
   z-index: 2;
 }
 .modal-container-close{
-  /* display: none; */
+  display: none;
 }
 .modal {
   box-sizing:border-box;
@@ -1013,7 +1013,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 35px;
 }
 .modal-close-button {
   position: absolute;
@@ -1064,7 +1064,7 @@ body {
 .info{
   position: absolute;
   left:157px;
-  top:50px;
+  top:55px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1074,12 +1074,16 @@ body {
   color:#FF5757;
 }
 .field-number{
-  padding: 14px 50px;
+  padding: 14px 40px;
   background-color: #F2F2F2;
   border:none;
   width: 30px;
   text-align: center;
   border-radius:4px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 .field-number:focus{
   outline: 2px solid #83B3D3;
@@ -1146,6 +1150,7 @@ input[type='number'] {
   background-color: transparent;
   align-items:center;
   box-sizing:border-box;
+  cursor: pointer;
 }
 .button-modal:focus{
   outline: 2px solid #83B3D3;
@@ -1163,11 +1168,11 @@ input[type='number'] {
   margin-right: 46px;
 }
 .less{
-  right: 90px;
-  bottom: 9px;
+  right: 78px;
+  bottom: 12px;
 }
 .more{
-  right: 15px;
+  right: 9px;
 }
 .more-svg{
   fill:#000000;
