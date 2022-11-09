@@ -1088,6 +1088,9 @@ body {
 .field-number::-webkit-inner-spin-button {
     display: none;
 }
+input[type='number'] {
+  -moz-appearance: textfield;
+}
 .field-number::placeholder{
   font-family: inherit;
   font-weight: 700;
@@ -1117,8 +1120,11 @@ body {
 .field-date:hover{
   background-color: #E6E6E6;
 }
-.field-date:focus{
+.field-date:focus-visible{
   outline: 2px solid #83B3D3;
+}
+.field-date:active{
+  outline: 2px solid #000000;
 }
 
 .field-date::placeholder{
@@ -1207,7 +1213,6 @@ body {
 .search-modal-button:active{
   color:rgba(242, 242, 242, 0.3);
 }
-
 .tooltip{
   position: relative;
 }
@@ -1234,7 +1239,9 @@ body {
   line-height: 20px;
   color:#ffffff;
   box-shadow:0 15px 30px rgba(0, 0, 0, 0.3);
+
 }
+
 .tooltip-text::before{
   content:" ";
   position: absolute;
@@ -1247,4 +1254,10 @@ body {
 }
 .tooltip-svg:hover +.tooltip-text{
   display: block;
+}
+.tooltip-svg:focus{
+  outline:2px solid rgb(2, 6, 252);
+}
+.tooltip-svg:focus +.tooltip-text{
+  display: block;;
 }
