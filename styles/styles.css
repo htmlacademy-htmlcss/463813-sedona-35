@@ -1,16 +1,16 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
   }
 html{
   height: 100%;
@@ -1024,7 +1024,7 @@ body {
   height: 53px;
   background-color: #F2F2F2;
   border: none;
-  background-image: url("../images/close.svg");
+  background-image: url("../images/modal/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1119,7 +1119,7 @@ input[type='number'] {
   height: 15px;
   top:5px;
   right: -450px;
-  background-image: url(../images/calendar.svg);
+  background-image: url(../images/modal/calendar.svg);
 }
 .field-date:hover{
   background-color: #E6E6E6;
