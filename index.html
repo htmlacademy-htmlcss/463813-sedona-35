@@ -18,7 +18,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="">Главная</a>
+              <a class="navigation-link navigation-link-current" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
@@ -189,41 +189,50 @@
           <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="field calendar" for="arrivalDate"> Дата Заезда:</label>
-              <input class="field-date" type="text" name="arrivalDate" id="arrivalDate" placeholder="Укажите дату" required>
+              <input class="field-date" type="text" name="arrivalDate" id="arrivalDate" placeholder="Укажите дату"
+                required>
               <span class="info info-error">Мы не можем отправить вас в прошлое</span>
             </div>
             <div class="field-group">
               <label class="field calendar" for="dateOfDeparture">Дата Выезда:</label>
-              <input class="field-date" type="text" name="dateOfDeparture" id="dateOfDeparture" placeholder="Укажите дату" required>
+              <input class="field-date" type="text" name="dateOfDeparture" id="dateOfDeparture"
+                placeholder="Укажите дату" required>
               <span class="info info-text">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="field-form-people">
-            <div class="field-group ">
-              <label class="field adults" for="adults">Взрослые:</label>
-              <button class="button-modal less"><svg class="less-svg" width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" />
-                </svg></button>
-              <input class="field-number" type="number" name="adults" id="adults" placeholder="2" required>
-              <button class="button-modal more"><svg class="more-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                </svg></button>
+              <div class="field-group ">
+                <label class="field adults" for="adults">Взрослые:</label>
+                <button class="button-modal less"><svg class="less-svg" width="15" height="2" viewBox="0 0 15 2"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" />
+                  </svg></button>
+                <input class="field-number" type="number" name="adults" id="adults" placeholder="2" required>
+                <button class="button-modal more"><svg class="more-svg" width="14" height="14" viewBox="0 0 14 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg></button>
+              </div>
+              <div class="field-group">
+                <label class="field tooltip" for="kids">Дети:<svg tabindex="0" class="tooltip-svg" width="3" height="12"
+                    viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z" />
+                  </svg>
+                  <span class="tooltip-text" tabindex="1">Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </label>
+                <button class="button-modal less"><svg class="less-svg" width="15" height="2" viewBox="0 0 15 2"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" />
+                  </svg></button>
+                <input class="field-number" type="number" name="kids" id="kids" placeholder="2" required>
+                <button class="button-modal more"><svg class="more-svg" width="14" height="14" viewBox="0 0 14 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg></button>
+              </div>
             </div>
-            <div class="field-group">
-              <label class="field tooltip" for="kids">Дети:<svg tabindex="0" class="tooltip-svg" width="3" height="12" viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z" />
-                </svg>
-                <span class="tooltip-text" tabindex="1">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </label>
-              <button class="button-modal less"><svg class="less-svg" width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" />
-                </svg></button>
-              <input class="field-number" type="number" name="kids" id="kids" placeholder="2" required>
-              <button class="button-modal more"><svg class="more-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                </svg></button>
-            </div>
-            </div>
-            <button type="submit" class="search-modal-button" href="#">Найти</button>
+            <button type="submit" class="search-modal-button">Найти</button>
           </form>
         </section>
       </div>
